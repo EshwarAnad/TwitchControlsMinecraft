@@ -1,7 +1,7 @@
 const uuidv1 = require('uuid/v1');
 const commandsConfig = require('./config/commands');
 
-const votingRoundDurationMilliseconds = 5 * 60 * 1000;
+const votingRoundDurationMilliseconds = 2 * 60 * 1000;
 
 const state = {
   chatConnected: false,
@@ -13,7 +13,7 @@ const voting = {
     name: null,
     description: null,
     options: [],
-    optionVotes: [], // should be an object, hash lookups are faster than indexOf.
+    optionVotes: [ [] ], // should be an object and not array of arrays, hash lookups are faster than filter.
   },
   roundEndsAt: 0,
 };
@@ -42,9 +42,10 @@ const run = () => {
         return (totalVotes > votesArray[winningIndex]) ? index : winningIndex;
       }, 0);
 
+    const winningCommandOptionVotesTotal = voting.command.optionVotes[winningCommandOptionIndex].length;
     const winningCommandOption = voting.command.options[winningCommandOptionIndex];
 
-    if (winningCommandOption && !winningCommandOption.pass) {
+    if (winningCommandOption && winningCommandOptionVotesTotal > 0 && !winningCommandOption.pass) {
       state.command = {
         uuid: voting.command.uuid,
         name: voting.command.name,
