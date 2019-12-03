@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Twitch Controls Minecraft</title>
+
+    <style>
+      body {
+        background: url('data:image/jpeg;base64,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') repeat;
+      }
+
+      .container-fluid {
+        text-align: center;
+      }
+
+      h1, h2, h3, h4, h5, h6, p {
+        font-family: 'Press Start 2P', cursive;
+        color: #FFFFFF;
+        text-shadow: 3px 3px #000000;
+        font-smooth: never;
+        -webkit-font-smoothing : none;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #000000;
+        opacity: 0.65;
+      }
+
+      .heading {
+        font-size: 22px;
+        line-height: 50px;
+        margin-top: 40px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+      }
+
+      .heading-minecraft {
+        font-size: 36px;
+      }
+
+      .voting-box {
+        position: relative;
+        background: rgba(0, 0, 0, 0.5);
+        border: 3px solid #000000;
+        width: 100%;
+        height: 500px;
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+
+      .voting-name {
+        font-size: 22px;
+        text-transform: uppercase;
+      }
+
+      .voting-description {
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+
+      .voting-timer {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+      }
+
+      .voting-timer h5 {
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .voting-timer p {
+        font-size: 10px;
+        margin: 0;
+        color: green;
+      }
+
+      .voting-option {
+        outline: 2px solid black;
+        background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_center.png');
+        background-repeat: repeat;
+        text-align: center;
+        color: white;
+        padding: 5px 0;
+        text-shadow: 3px 3px #4C4C4C;
+        border-bottom: 4px solid #565656;
+        border-right: 2px solid #565656;
+        border-left: 2px solid #AAA;
+        border-top: 2px solid #AAA;
+        box-sizing: border-box;
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+
+      .voting-option-selected {
+        outline: 4px solid green !important;
+      }
+
+      .voting-option-name {
+        margin: 0 0 5px 0;
+      }
+
+      .voting-option-count {
+        margin: 0;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="overlay"></div>
+
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-10">
+          <h2 class="heading">Twitch Controls<br /><span class="heading-minecraft">MINECRAFT</span></h2>
+
+          <div class="voting-box">
+            <h4 class="voting-name">Loading...</h4>
+            <p class="voting-description">Connecting to service...</p>
+
+            <div class="voting-options"></div>
+
+            <div class="voting-timer">
+              <h5>Voting Ends In:<span class="voting-timer-seconds">0</span>s</h5>
+              <p>To vote, enter the number you want to vote for into the chat.</p>
+            </div>
+          </div>
+
+          <p>Created by @braydonio</p>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var lastCommandUUID = null;
+      var currentVote = null;
+
+      $(function() {
+        // main tick timer
+        setInterval(function() {
+          $.getJSON('/voting.json', function(data) {
+            currentVote = data;
+
+            var command = currentVote.command;
+
+            if (lastCommandUUID != command.uuid) {
+              lastCommandUUID = command.uuid;
+
+              $('.voting-name').text(command.name);
+              $('.voting-description').text(command.description);
+              $('.voting-options').empty();
+
+              $(command.options).each(function(index, value) {
+                var quantity = (value.quantity || value.experience || value.repeatCommand) ? ' (x' + (value.quantity || value.experience || value.repeatCommand) + ')' : '';
+                $('.voting-options').append(
+                  '<div class="voting-option">' +
+                    '<p class="voting-option-name">' + (index + 1) +  ') ' + value.name + quantity + '</p>' +
+                    '<p class="voting-option-count"><span class="votes">0</span> Votes</p>' +
+                  '</div>'
+                );
+              });
+            }
+
+            var highestVoteIndex = 0;
+
+            $(command.optionVotes).each(function(index, votes) {
+              $('.votes').eq(index).text(votes.length);
+              highestVoteIndex = (votes.length > command.optionVotes[highestVoteIndex]) ? index : highestVoteIndex;
+            });
+
+            $('.voting-option').removeClass('voting-option-selected');
+
+            if (command.optionVotes[highestVoteIndex].length > 0) {
+              $('.voting-option').eq(highestVoteIndex).addClass('voting-option-selected');
+            }
+
+            $('.voting-timer-seconds').text(Math.floor((currentVote.roundEndsAt - Date.now()) / 1000));
+          });
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
