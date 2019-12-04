@@ -1,7 +1,7 @@
 const uuidv1 = require('uuid/v1');
 const commandsConfig = require('./config/commands');
 
-const votingRoundDurationMilliseconds = 2 * 60 * 1000;
+const votingRoundDurationMilliseconds = 30 * 1000;
 
 const state = {
   chatConnected: false,
@@ -83,11 +83,11 @@ const handleChatMessage = (target, context, message, self) => {
     return;
   }
 
-/*  for (let i = 0; i < voting.command.optionVotes.length; i++) {
+  for (let i = 0; i < voting.command.optionVotes.length; i++) {
     voting.command.optionVotes[i] = voting.command.optionVotes[i].filter(votedUserId => {
       return userId != votedUserId;
     });
-  }*/
+  }
 
   voting.command.optionVotes[voteIndex].push(userId);
 

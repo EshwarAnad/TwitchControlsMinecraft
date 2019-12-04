@@ -25,7 +25,7 @@ module.exports = [
     },
   },
 
-
+/*
   {
     name: 'Disaster',
     weight: 8,
@@ -58,7 +58,7 @@ module.exports = [
       pass: true,
     },
   },
-
+*/
 
   {
     name: 'Status',
