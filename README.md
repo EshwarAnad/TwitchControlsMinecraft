@@ -5,7 +5,7 @@
 
 Your chat may choose to give you items, or maybe they want to cause a thunderstorm, perhaps summon a few chickens? Yep - all things they can do, in real time, while interacting with you as you stream and experience the shitstorm or bounty the give you.
 
-(You can watch a video from a stream with this mod in action here)[https://www.twitch.tv/videos/517641721]
+**(You can watch a video from a stream with this mod in action here)[https://www.twitch.tv/videos/517641721]**
 
 <img src="https://github.com/braydo25/TwitchControlsMinecraft/blob/master/doc-assets/example-3.png" height="400" />
 <img src="https://github.com/braydo25/TwitchControlsMinecraft/raw/master/doc-assets/example-1.png" />
