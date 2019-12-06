@@ -1,7 +1,7 @@
 const uuidv1 = require('uuid/v1');
 const commandsConfig = require('./config/commands');
 
-const votingRoundDurationMilliseconds = 30 * 1000;
+const votingRoundDurationMilliseconds = 60 * 1000;
 
 const state = {
   chatConnected: false,

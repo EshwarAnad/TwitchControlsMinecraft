@@ -55,7 +55,7 @@
         background: rgba(0, 0, 0, 0.5);
         border: 3px solid #000000;
         width: 100%;
-        height: 500px;
+        min-height: 550px;
         margin-bottom: 20px;
         padding: 20px;
       }
@@ -66,7 +66,7 @@
       }
 
       .voting-description {
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 20px;
       }
 
@@ -83,7 +83,7 @@
       }
 
       .voting-timer p {
-        font-size: 10px;
+        font-size: 12px;
         margin: 0;
         color: green;
       }
@@ -101,7 +101,7 @@
         border-left: 2px solid #AAA;
         border-top: 2px solid #AAA;
         box-sizing: border-box;
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 20px;
       }
 
@@ -129,8 +129,7 @@
       <div class="overlay"></div>
 
       <div class="row">
-        <div class="col"></div>
-        <div class="col-10">
+        <div class="col">
           <h2 class="heading">Twitch Controls<br /><span class="heading-minecraft">MINECRAFT</span></h2>
 
           <div class="voting-box">
@@ -145,9 +144,8 @@
             </div>
           </div>
 
-          <p class="created-by">Created by @LolThisIsFine</p>
+          <p class="created-by">Created by @MrThisIsFine</p>
         </div>
-        <div class="col"></div>
       </div>
     </div>
 
@@ -177,7 +175,7 @@
                 var quantity = (value.quantity || value.experience || value.repeatCommand) ? ' (x' + (value.quantity || value.experience || value.repeatCommand) + ')' : '';
                 $('.voting-options').append(
                   '<div class="voting-option">' +
-                    '<p class="voting-option-name">' + (index + 1) +  ') ' + value.name + quantity + '</p>' +
+                    '<p class="voting-option-name">' + (index + 1) +  ': ' + value.name + quantity + '</p>' +
                     '<p class="voting-option-count"><span class="votes">0</span> Votes</p>' +
                   '</div>'
                 );
