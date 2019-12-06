@@ -1,4 +1,4 @@
-#Twitch Controls Minecraft
+# Twitch Controls Minecraft
 
 ## What Is This?
 **Twitch Controls Minecraft** is a Minecraft mod that lets your chat vote to make things happen in your minecraft server in real time. The options presented to vote on are entirely randomized and voting rounds by default last 60 seconds.
