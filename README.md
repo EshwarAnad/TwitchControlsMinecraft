@@ -1,12 +1,13 @@
 # Twitch Controls Minecraft
 
-![Example 1](https://github.com/braydo25/TwitchControlsMinecraft/raw/master/doc-assets/example-1.png)
-![Example 2](https://github.com/braydo25/TwitchControlsMinecraft/blob/master/doc-assets/example-2.png)
-
 ## What Is This?
 **Twitch Controls Minecraft** is a Minecraft mod that lets your chat vote to make things happen in your minecraft server in real time. The options presented to vote on are entirely randomized and voting rounds by default last 60 seconds.
 
 Your chat may choose to give you items, or maybe they want to cause a thunderstorm, perhaps summon a few chickens? Yep - all things they can do, in real time, while interacting with you as you stream and experience the shitstorm or bounty the give you.
+
+![Example 1](https://github.com/braydo25/TwitchControlsMinecraft/raw/master/doc-assets/example-1.png)
+![Example 2](https://github.com/braydo25/TwitchControlsMinecraft/blob/master/doc-assets/example-2.png)
+![Example 3](https://github.com/braydo25/TwitchControlsMinecraft/blob/master/doc-assets/example-3.png)
 
 ## Installation
 
