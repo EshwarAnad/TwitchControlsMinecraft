@@ -1,5 +1,9 @@
 # Twitch Controls Minecraft
 
+## Have Questions? Need Setup Help?
+
+Hey all! Thanks for the interest in the project. If you need help getting this setup, or have any questions - feel free to reach out to me on Twitter: https://twitter.com/braydonio
+
 ## What Is This?
 **Twitch Controls Minecraft** is a Minecraft mod that lets your chat vote to make things happen in your minecraft server in real time. The options presented to vote on are entirely randomized and voting rounds by default last 60 seconds.
 
